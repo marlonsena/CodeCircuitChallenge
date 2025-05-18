@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 150 76% 39%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 35 93% 52%;
+  --accent-foreground: 210 40% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+  --sidebar-background: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  --chart-1: 207 90% 54%;
+  --chart-2: 150 76% 39%;
+  --chart-3: 35 93% 52%;
+  --chart-4: 270 70% 60%;
+  --chart-5: 330 70% 60%;
+}
+
+.light {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 150 76% 39%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 35 93% 52%;
+  --accent-foreground: 210 40% 98%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --ring: 20 14.3% 4.1%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-gray-50 text-gray-800 dark:bg-background dark:text-gray-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .draggable {
+    cursor: grab;
+  }
+
+  .draggable.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+  }
+
+  .destination-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .destination-card img {
+    transition: transform 0.3s ease;
+  }
+}
