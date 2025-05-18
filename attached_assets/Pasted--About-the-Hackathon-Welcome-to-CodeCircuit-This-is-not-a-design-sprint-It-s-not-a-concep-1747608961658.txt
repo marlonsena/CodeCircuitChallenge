@@ -1,0 +1,72 @@
+​🎉 About the Hackathon
+​Welcome to CodeCircuit!
+
+​This is not a design sprint. It’s not a concept jam. CodeCircuit is a front-end challenge where you take an idea and actually build it.
+
+​You’ll pick a challenge from our list, design it your way, and ship a real, working web app that looks great and runs smooth.
+
+​No teams. No backend. Just clean code, good taste, and your own spin on the problem.
+
+​You will find the challenge list here.
+
+​🚀 Submission Details
+​You can submit up to 2 entries, each based on a different prompt.
+
+​📝 Submit your project here:
+
+​👉 https://form.typeform.com/to/ZoYfpwYT
+
+​📅 Deadline: Sunday, May 18 at 11:59 PM PT
+
+​📌 Your submission must include:
+
+​A hosted web app link (Vercel, Netlify, GitHub Pages, etc.)
+
+​A public GitHub repo
+
+​A working frontend built from one of our official prompts
+
+​👉 Prompt List:
+
+​https://www.codecircuit.ai/idealist
+
+​📜 Key Rules & Format
+
+​🚫 Solo-only — no teams
+
+​🎯 Choose from the official prompt list only
+
+​🔄 You can submit up to 2 entries (different prompts)
+
+​🕒 Build during the hackathon period only (no prebuilt projects)
+
+​🧪 Use mock or fake data if needed — backend is optional
+
+​✅ You can use any frontend stack, library, or design system
+
+​⚠️ No fully no-code tools (like v0, Loveable, Replit Agent)
+
+​✅ GitHub Copilot, Cursor, Windsurf = allowed for assistance
+
+​PS: Not sure about the rules, tools, or submission flow?
+
+​Our FAQ doc breaks it all downt o help answer common questions—make sure to check it before you build or submit.
+Check here
+
+​Full rules + allowed tools:
+
+​👉 codecircuit.ai → Rules section
+
+​🧠 Judging Criteria
+
+​Your project will be evaluated on:
+
+​User Experience – Is the flow intuitive?
+
+​Visual Design – Does it look polished and consistent?
+
+​Functionality – Does everything work smoothly?
+
+​Code Quality – Is it clean, readable, and well-organized?
+
+​Bonus – Did you add a clever feature or thoughtful detail?
