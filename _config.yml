@@ -1,0 +1,14 @@
+# GitHub Pages Configuration
+# This file helps GitHub understand how to serve your site
+
+# Build settings
+highlighter: rouge
+markdown: kramdown
+theme: jekyll-theme-minimal
+encoding: UTF-8
+
+# Include files
+include:
+  - ".nojekyll"
+  - "CNAME"
+  - "README.md"
