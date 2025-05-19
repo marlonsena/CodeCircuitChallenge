@@ -234,11 +234,27 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* Include other feature components */}
-      <PackingList />
-      <Itinerary />
-      <DestinationExplorer />
-      <BudgetTracker />
+      {/* Packing List */}
+      <section id="packing-list" className="mb-8">
+        <PackingList />
+      </section>
+
+      {/* Itinerary */}
+      <section id="itinerary" className="mb-8">
+        <Itinerary />
+      </section>
+
+      {/* Destinations Explorer */}
+      <section id="destinations" className="mb-8">
+        <DestinationExplorer />
+      </section>
+
+      {/* Budget Tracker */}
+      <section id="budget" className="mb-8">
+        <BudgetTracker />
+      </section>
+
+      {/* Currency Converter */}
       <CurrencyConverter />
     </>
   );
