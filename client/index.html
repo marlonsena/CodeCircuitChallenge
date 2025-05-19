@@ -7,6 +7,37 @@
     <meta name="description" content="A travel planning application built for the Code Circuit Challenge hackathon" />
     <meta name="theme-color" content="#3b82f6" />
     <link rel="canonical" href="https://github.com/pages/CodeCircuitChallenge/" />
+    <script>
+      // Initial navigation handling for GitHub Pages
+      (function() {
+        // Function to handle scroll to section if hash is present
+        function scrollToSection() {
+          const hash = window.location.hash;
+          if (hash && hash.length > 1) {
+            // Remove the # character
+            const sectionId = hash.substring(1);
+            // Check if it's an in-page section
+            const inPageSections = ["trip-dashboard", "packing-list", "itinerary", "destinations", "budget"];
+            
+            if (inPageSections.includes(sectionId)) {
+              // Small delay to ensure the page is loaded
+              setTimeout(() => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }, 300);
+            }
+          }
+        }
+
+        // Run on initial load
+        window.addEventListener('load', scrollToSection);
+        
+        // Run when hash changes
+        window.addEventListener('hashchange', scrollToSection);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -51,7 +51,38 @@ If you want to use a custom domain:
 
 ## Troubleshooting
 
-If you encounter any issues:
-- Check the GitHub Actions logs for errors
-- Make sure your vite.config.ts has the correct base path
-- Verify that the .github/workflows/deploy.yml file is correctly set up
+### Common Issues and Solutions
+
+#### 1. Navbar Shows But Content Doesn't Appear
+This is usually related to routing in the GitHub Pages environment. We've implemented a hash-based routing system that should handle this. If you're experiencing this issue:
+- Check the browser console for any errors
+- Make sure `useHashBasedLocation` hook is properly implemented in App.tsx
+- Verify that all the sections have the correct IDs that match the hash fragments
+
+#### 2. In-Page Navigation Not Working
+Our application uses hash fragments to navigate to specific sections:
+- Make sure section IDs (like "trip-dashboard", "packing-list") match exactly with the hash links
+- Check that scroll behavior is properly implemented in the Router component
+- Inspect the page structure to ensure sections are properly rendered
+
+#### 3. 404 Errors on Direct URL Access
+- Verify the .nojekyll file is present in the root of your deployment
+- Check that 404.html is correctly configured to redirect to the main application
+- Ensure GitHub Pages is properly set up in your repository settings
+
+#### 4. Fix for Content Not Displaying
+If content still doesn't display correctly:
+1. Run the included test script to simulate GitHub Pages locally:
+   ```powershell
+   ./test-github-pages.ps1
+   ```
+2. Check browser console for any errors
+3. Try clearing your browser cache or using incognito mode
+
+### Understanding the Routing Solution
+
+Our application uses a hybrid approach:
+- Hash-based routing for page navigation (`#/route`)
+- Fragment identifiers for in-page section navigation (`#section-id`)
+
+The `useHashBasedLocation` hook is designed to differentiate between these two types of navigation and handle them appropriately.
