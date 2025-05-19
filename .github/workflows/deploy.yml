@@ -27,14 +27,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci      - name: Build
+          cache: 'npm'      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build
         run: npm run build
 
       - name: Copy .nojekyll file
-        run: cp .nojekyll ./dist/public/ || echo "Creating .nojekyll file" && touch ./dist/public/.nojekyll      - name: Copy 404.html file
+        run: cp .nojekyll ./dist/public/ || echo "Creating .nojekyll file" && touch ./dist/public/.nojekyll
+        
+      - name: Copy 404.html file
         run: |
           # Ensure the file exists and copy it
           if [ -f "client/404.html" ]; then
